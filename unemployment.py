@@ -16,7 +16,7 @@ def wait_masks(driver):
 
 conn = sqlite3.connect('factfinder.db')
 cur = conn.cursor()
-cur.execute('CREATE TABLE UNEMPLOYMENT (name TEXT, population INT, employment TEXT, unemployment TEXT)')
+# cur.execute('CREATE TABLE UNEMPLOYMENT (name TEXT, population INT, employment TEXT, unemployment TEXT)')
 
 
 def modify_table(driver):
