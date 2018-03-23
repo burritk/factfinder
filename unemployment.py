@@ -116,6 +116,7 @@ def extract_values(driver):
 
 
 driver = get_headless_driver(no_sandbox=True)
+driver.set_page_load_timeout(60)
 driver.get(
     'https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_16_5YR_S2301&prodType=table')
 modify_table(driver)
